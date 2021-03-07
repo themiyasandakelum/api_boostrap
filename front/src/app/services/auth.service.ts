@@ -8,16 +8,16 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-   private Base_Url= 'http://localhost:8080/api/v1/users';
+  //  private Base_Url= 'http://localhost:8080/api/v1/users';
 
   constructor(private httpClient:HttpClient) { }
 
-  getUserList(): Observable<User[]>{
-    return this.httpClient.get<User[]>('${this.Base_Url}');
-  }
-  createUser(user:User):Observable<Object>{
-    return this.httpClient.post('${this.Base_Url}',user);
-  }
+  // getUserList(): Observable<User[]>{
+  //   return this.httpClient.get<User[]>('${this.Base_Url}');
+  // }
+  // createUser(user:User):Observable<Object>{
+  //   return this.httpClient.post('${this.Base_Url}',user);
+  // }
 // getToken (): String{
 //  return localStorage.getItem('token');
 

@@ -8,11 +8,11 @@ import {User} from '../../models/user';
   templateUrl: './client.component.html',
   styleUrls: ['./client.component.css']
 })
+
 export class ClientComponent implements OnInit {
- 
+  user : User = new User();
   constructor( )  {}
   
-  user : User = new User();
 
  
   ngOnInit(): void {
@@ -21,6 +21,7 @@ export class ClientComponent implements OnInit {
   onSubmit(): void {
     console.log(this.user);
   }
+  
 }
 
 

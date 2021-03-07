@@ -1,9 +1,10 @@
 export class User {
-  id?: string;
-  name?: string;
-  idno?: number;
+  id!: number;
+  name!: string;
+  nic?: string;
   email?: string;
-  accno?: number;
+  accno?: string;
   password?: string;
-  token?: string;
+  
 }
+

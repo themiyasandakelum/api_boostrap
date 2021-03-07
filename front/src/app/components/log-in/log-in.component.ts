@@ -20,7 +20,7 @@ export class LogInComponent implements OnInit {
     console.log(this.user);
   }
   // loginhandle(){
-  //   this.dataService.getConfig(this.Username)
+  //   this.dataService.getConfig(this.name)
   //   .subcribe((data:config=>{
   //     console.log(data);
   //     this.harcodeAuthenticaionService.un=data.Username;

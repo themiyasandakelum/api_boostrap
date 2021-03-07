@@ -1,14 +1,13 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/models/user';
 import { UserService } from 'src/app/user.service';
-import {User} from '../../models/user';
-
 
 @Component({
-  selector: 'app-sign-in',
-  templateUrl: './sign-in.component.html',
-  styleUrls: ['./sign-in.component.css']
+  selector: 'app-updateuser',
+  templateUrl: './updateuser.component.html',
+  styleUrls: ['./updateuser.component.css']
 })
-export class SignInComponent implements OnInit {
+export class UpdateuserComponent implements OnInit {
 
   user: User = new User();
   router: any;
@@ -22,7 +21,7 @@ export class SignInComponent implements OnInit {
   saveUser(){
   this.userService.signUpUser(this.user).subscribe(data =>{
    console.log(data); 
-   console.log(this.user);
+   
    this.goToUserList();
   },
   error =>console.log(error)
@@ -37,3 +36,4 @@ goToUserList(){
     this.saveUser();  
   }
 }
+
